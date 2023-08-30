@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto';
+}
+
+header{
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+header img{
+    width: 180px;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+}
+
+header ul li + li {
+    margin-left: 24px;
+}
+
+header a {
+    color: #ebebeb;
+    text-decoration: none;
+    transition: color 0.4s;
+}
+
+header a:hover{
+    color: #f13239;
+}
+
+.wrapper{
+    position: fixed;
+    top: 30%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+  }
+  
+#button a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+  
+#button a span{
+    position: relative;
+    z-index: 2;
+}
+  
+#button a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff003b;
+    transition: all .35s;
+}
+  
+#button a:hover{
+    color: #fff;
+}
+  
+#button a:hover:after{
+    width: 100%;
+}
+
+#top h1{
+    color: bold;
+    text-align: center;
+}
+
+#clock {
+    margin-left: 150px;
+    margin-top: 20px;
+}
+#clock img{
+    height: 100px;
+    width: 100px;
+}
+
+#clock p{
+    margin-left: -30px;
+}
+    
